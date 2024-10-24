@@ -45,3 +45,9 @@ To create the graphs of MRI scans, first download the dataset and place it in a 
 ```bash
 python create_graphs.py
 ```
+
+To replicate our experiment, first, create a new folder named experiment. Inside it, create a folder named gnn and a new folder named results to save the segmention obtained by our method. Lastly, run the following scripts:
+```bash
+python run_exp.py
+python plot_results.py
+```
