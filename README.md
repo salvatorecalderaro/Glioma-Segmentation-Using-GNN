@@ -10,3 +10,5 @@ Given an MRI scan and its mask, the steps for the graph building are:
 - segmentation of the image into superpixels using the Felzenszwalb algorithm;
 - computation of the superpixel features averaging all the pixels within each superpixel.
 - construction of a Region Adiacenjy Graph. The nodes are the superpixels; the edges are the spatial relationships between them. 
+
+![Graph](images/graph.png)
