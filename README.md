@@ -51,3 +51,6 @@ To replicate our experiment, first, create a new folder named experiment. Inside
 python run_exp.py
 python plot_results.py
 ```
+
+![example](images/image_3.png)
+
