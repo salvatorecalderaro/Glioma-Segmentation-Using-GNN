@@ -3,3 +3,4 @@ This repository provides a new graph-based deep learning approach for glioma seg
 
 ## Dataset
 The dataset used for our experimental activity is publicly available at: [https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation]()
+It contains MRI scans of 110 patients with lower-grade glioma with the relative segmentation mask annotated by medical personnel. 
