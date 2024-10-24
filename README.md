@@ -12,3 +12,11 @@ Given an MRI scan and its mask, the steps for the graph building are:
 - construction of a Region Adiacenjy Graph. The nodes are the superpixels; the edges are the spatial relationships between them. 
 
 ![Graph](images/graph.png)
+
+## Installation
+
+To install the required dependencies, use:
+
+```bash
+pip install -r requirements.txt
+```
