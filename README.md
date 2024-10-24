@@ -1,6 +1,12 @@
 # Glioma-Segmentation-Using-GNN
-This repository provides a new graph-based deep learning approach for glioma segmentation. It is based on constructing a graph starting from an MRI scan and then employing a Graph Neural Network.
+This repository provides a new graph-based deep-learning approach for glioma segmentation. It is based on constructing a graph starting from an MRI scan and then employing a Graph Neural Network.
 
 ## Dataset
 The dataset used for our experimental activity is publicly available at: [https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation]()
 It contains MRI scans of 110 patients with lower-grade glioma with the relative segmentation mask annotated by medical personnel. 
+
+## Graph Construction
+Given an MRI scan and its mask, the steps for the graph building are:
+- segmentation of the image into superpixels using the Felzenszwalb algorithm;
+- computation of the superpixel features averaging all the pixels within each superpixel.
+- construction of a Region Adiacenjy Graph. The nodes are the superpixels; the edges are the spatial relationships between them. 
