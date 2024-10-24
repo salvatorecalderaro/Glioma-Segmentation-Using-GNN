@@ -18,7 +18,7 @@ Given an MRI scan and its mask, the steps for the graph building are:
 First, we build graphs from MRI images and the related masks, as previously described. We use these graphs to train a very simple GNN, including two GCN layers with a dimensionality of 512 and a final layer with one unit with a Sigmoid activation function to perform the final node classification. We perform Batch Normalization and Dropout between the GCN layers to enhance model generalization and mitigate overfitting.After training the GNN, we perform node classification and build the final segmentation mask. 
 
 
-![framwwork](images/framework.png)
+![framwwork](images/train_test.png)
 
 ## Installation
 
