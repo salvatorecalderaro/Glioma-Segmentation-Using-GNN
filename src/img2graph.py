@@ -214,7 +214,7 @@ def make_plot(original_image, segmentation_image, superpixel_image, graphplot):
     plt.savefig("../images/graph.png", dpi=dpi)
 
     
-def create_graph(img_path, mask_path,kernel_size,max_dist,ratio, plot=False):
+def create_graph(img_path,mask_path,scale,sigma,min_size, plot=False):
     """
     Creates a Region Adjacency Graph (RAG) from an input MRI image and its corresponding mask, using superpixels and a specified SLIC algorithm parameters.
 
@@ -235,7 +235,7 @@ def create_graph(img_path, mask_path,kernel_size,max_dist,ratio, plot=False):
     image, mask = load_mri(img_path, mask_path)
 
     # Create superpixels from the input image using the SLIC algorithm
-    segments, boundaries = create_segments(image,kernel_size,max_dist,ratio)
+    segments, boundaries = create_segments(image,scale,sigma,min_size)
 
     # Assign labels to the superpixels based on the most common label in the corresponding mask region
     labels = assign_labels_to_superpixels(segments, mask)
