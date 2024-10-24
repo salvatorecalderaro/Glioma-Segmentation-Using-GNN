@@ -27,3 +27,16 @@ To install the required dependencies, use:
 ```bash
 pip install -r requirements.txt
 ```
+## Usage
+To convert an MRI scan into a graph use the following code:
+```python
+from img2graph import create_graph
+img_path="insert the image path"
+mask_path="insert the mask path"
+
+scale=1
+sigma=0.8
+min_size=20
+
+g=create_graph(img_path1,mask_path,scale,sigma,min_size,plot=True)
+```
