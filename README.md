@@ -41,7 +41,6 @@ min_size=20
 g=create_graph(img_path1,mask_path,scale,sigma,min_size,plot=True)
 ```
 
-# Graphs Creation
 To create the graphs of MRI scans, first download the dataset and place it in a folder named dataset, create  a new folder named graphs and then run the following script:
 ```bash
 python create_graphs.py
