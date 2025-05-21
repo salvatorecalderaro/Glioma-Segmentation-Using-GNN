@@ -54,3 +54,14 @@ python plot_results.py
 
 ![example](images/image_3.png)
 
+If you use this model please cite:
+```
+@inproceedings{amato2024semantic,
+  title={Semantic Segmentation of Gliomas on Brain MRIs by Graph Convolutional Neural Networks},
+  author={Amato, Domenico and Calderaro, Salvatore and {Lo Bosco}, Giosu{\'e} and Rizzo, Riccardo and Vella, Filippo},
+  booktitle={2024 International Conference on AI x Data and Knowledge Engineering (AIxDKE)},
+  pages={143--149},
+  year={2024},
+  organization={IEEE}
+}
+```
